@@ -38,6 +38,12 @@
             android:summary="@string/status_bar_battery_style_summary"
             android:fragment="com.superior.lab.fragments.BatteryStyleSettings" />
             
+        <Preference
+            android:key="battery_bar_category"
+            android:title="@string/battery_bar_title"
+            android:summary="@string/battery_bar_summary"
+            android:fragment="com.superior.lab.fragments.BatteryBar" />
+            
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="data_disabled_icon"
             android:title="@string/data_disabled_icon_title"
