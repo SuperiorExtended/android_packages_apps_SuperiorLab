@@ -29,7 +29,13 @@
                android:key="enable_ripple_effect"
                android:title="@string/enable_fingerprint_ripple_effect_title"
                android:summary="@string/enable_fingerprint_ripple_effect_summary"
-               android:defaultValue="true" />   
+               android:defaultValue="true" />  
+               
+          <com.superior.support.preferences.GlobalSettingSwitchPreference
+               android:key="wake_when_plugged_or_unplugged"
+               android:title="@string/wakeup_when_plugged_unplugged_title"
+               android:summary="@string/wakeup_when_plugged_unplugged_summary"
+               android:defaultValue="true" /> 
 
           <com.superior.support.preferences.SystemSettingSwitchPreference
                android:key="pocket_judge"
