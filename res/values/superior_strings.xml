@@ -54,7 +54,6 @@
 
      <!-- Units -->
      <string name="unit_milliseconds">milliseconds</string>
-     <string name="unit_percent" translatable="false">\u0025</string>
      <string name="unit_pixels" translatable="false">dp</string>
      <string name="unit_seconds">seconds</string>
      <string name="unit_x1000ms" translatable="false">x1000 ms</string>
@@ -733,8 +732,6 @@
     <string name="ambient_notification_light_color_mode_custom">Custom color</string>
     <string name="ambient_notification_light_color_mode_wall">Wallpaper color</string>
     <string name="ambient_image_title">Ambient Image</string>
-    <string name="file_header_select_title">Select local image</string>
-    <string name="file_header_select_summary">Select image from storage</string>
 
     <!-- Smart Pixels -->
     <string name="smart_pixels_warning_text">Smart pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see improvement in battery life. Note that in some cases it can result in unresponsive areas on touch screen</string>
@@ -902,18 +899,18 @@
     
     <!-- QS Headers -->
     <string name="status_bar_custom_header_title">Enable</string>
-    <string name="daylight_header_pack_title">Header image pack</string>
+     <string name="daylight_header_pack_title">Header image collection</string>
     <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
     <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
     <string name="unit_percent">\u0025</string>
     <string name="static_header_provider" translatable="false">static</string>
     <string name="daylight_header_provider" translatable="false">daylight</string>
-    <string name="static_header_provider_title">Static</string>
-    <string name="daylight_header_provider_title">Dynamic</string>
+    <string name="static_header_provider_title">Static image</string>
+    <string name="daylight_header_provider_title">Image collection</string>
     <string name="custom_header_provider_title">Header provider</string>
     <string name="custom_header_browse_title">Browse installed headers</string>
     <string name="custom_header_browse_summary">Click on any image to use for static mode</string>
-    <string name="custom_header_browse_summary_new">Browse all available header packages</string>
+     <string name="custom_header_browse_summary_new">Browse all available header collections</string>
     <string name="custom_header_pick_title">Select header image</string>
     <string name="custom_header_pick_summary">Select an image to use for static mode</string>
     <string name="style_enabled_summary">Custom header image is ON</string>
@@ -921,5 +918,9 @@
     <string name="header_provider_disabled">Disabled</string>
     <string name="custom_header_title">Custom header image</string>
     <string name="custom_header_summary">Select QS background header image</string>
+    <string name="file_header_select_title">Select image</string>
+    <string name="file_header_select_summary">Select custom image</string>
+    <string name="file_header_provider_title">Custom image</string>
+    <string name="file_header_provider" translatable="false">file</string>
 
 </resources>
