@@ -26,6 +26,12 @@
             android:title="@string/ambient_text_category_title"
             android:summary="@string/ambient_text_category_summary"
             android:fragment="com.superior.lab.fragments.AmbientCustomizations" />
+            
+        <Preference
+            android:key="smart_pixels"
+            android:title="@string/smart_pixels_title" 
+            android:summary="@string/smart_pixels_summary" 
+            android:fragment="com.superior.lab.fragments.SmartPixels" />
 
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="settings_header_image_random"
@@ -37,8 +43,8 @@
             android:key="window_ignore_secure"
             android:title="@string/laboratory_ignore_window_secure_title"
             android:summary="@string/laboratory_ignore_window_secure_summary"
-            android:defaultValue="false"/>
-            
+            android:defaultValue="false"/>           
+                                
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="charging_animation_bg"
             android:title="@string/charging_animation_bg_title"
