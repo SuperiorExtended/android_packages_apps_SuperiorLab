@@ -20,7 +20,13 @@
 
      <PreferenceCategory
         android:title="@string/general_category">
-            
+        
+        <Preference
+            android:key="ambient_customization"
+            android:title="@string/ambient_text_category_title"
+            android:summary="@string/ambient_text_category_summary"
+            android:fragment="com.superior.lab.fragments.AmbientCustomizations" />
+
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="settings_header_image_random"
             android:title="@string/settings_header_image_random_title"
