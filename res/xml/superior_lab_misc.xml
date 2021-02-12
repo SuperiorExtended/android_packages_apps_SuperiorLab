@@ -80,4 +80,16 @@
             android:defaultValue="true"/>
 
     </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="@string/battery_saving">
+
+        <!-- Sensor Block -->
+        <Preference
+            android:key="sensor_block_settings"
+            android:title="@string/sensor_block_title"
+            android:summary="@string/sensor_block_summary"
+            android:fragment="com.superior.lab.fragments.SensorBlockSettings"/>
+
+    </PreferenceCategory>
 </PreferenceScreen>
