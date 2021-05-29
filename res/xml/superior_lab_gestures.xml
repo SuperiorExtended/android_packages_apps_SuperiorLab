@@ -20,18 +20,21 @@
             
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="status_bar_brightness_control"
+            android:icon="@drawable/ic_brightness_auto"
             android:title="@string/status_bar_brightness_control_title"
             android:summary="@string/status_bar_brightness_control_summary"
             android:defaultValue="false" />
             
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="doze_trigger_doubletap"
+            android:icon="@drawable/tap_icon"
             android:title="@string/doze_double_tap_title"
             android:summary="@string/doze_double_tap_summary"
             android:defaultValue="false" />
 
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_gesture"
+            android:icon="@drawable/tap_icon"
             android:title="@string/status_bar_double_tap_to_sleep_title"
             android:summary="@string/status_bar_double_tap_to_sleep_summary"
             android:defaultValue="true" />

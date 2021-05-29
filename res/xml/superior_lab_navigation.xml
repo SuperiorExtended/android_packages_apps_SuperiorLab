@@ -25,6 +25,7 @@
 
     <Preference
         android:key="gesture_system_navigation"
+        android:icon="@drawable/ic_buttons"
         android:title="@string/system_navigation_title"
         android:summary="@string/system_navigation_summary"
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"

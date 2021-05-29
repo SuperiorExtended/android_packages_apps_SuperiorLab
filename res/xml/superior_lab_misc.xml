@@ -29,12 +29,14 @@
         	
         <com.superior.support.preferences.SecureSettingSwitchPreference
             android:key="media_controls_always_show_time"
+            android:icon="@drawable/ic_music_note"
             android:title="@string/media_controls_always_show_time_title"
             android:summary="@string/media_controls_always_show_time_summary"
             android:defaultValue="false" />
         	
         <Preference
             android:key="smart_pixels"
+            android:icon="@drawable/ic_smart_pixels"
             android:title="@string/smart_pixels_title" 
             android:summary="@string/smart_pixels_summary" 
             android:fragment="com.superior.lab.fragments.SmartPixels" />
@@ -47,12 +49,14 @@
             
         <com.superior.support.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.games"
+            android:icon="@drawable/ic_backup"
             android:title="@string/games_spoof_title"
             android:summary="@string/games_spoof_summary"
             android:defaultValue="false" />
             
         <com.superior.support.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.gphotos"
+            android:icon="@drawable/ic_backup"
             android:title="@string/use_photos_spoof_title"
             android:summary="@string/use_photos_spoof_summary"
             android:defaultValue="true" />
@@ -65,6 +69,7 @@
             
         <com.superior.support.preferences.SystemSettingListPreference
             android:key="settings_dashboard_style"
+            android:icon="@drawable/ic_cog"
             android:title="@string/settings_style_title"
             android:entries="@array/settings_style_entries"
             android:entryValues="@array/settings_style_values"
@@ -81,24 +86,28 @@
 
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="settings_header_image_random"
+            android:icon="@drawable/ic_user"
             android:title="@string/settings_header_image_random_title"
             android:summary="@string/settings_header_image_random_summary"
             android:defaultValue="true" />
 
         <com.superior.support.preferences.SecureSettingSwitchPreference
             android:key="window_ignore_secure"
+            android:icon="@drawable/ic_unlock_alert"
             android:title="@string/laboratory_ignore_window_secure_title"
             android:summary="@string/laboratory_ignore_window_secure_summary"
             android:defaultValue="false"/>           
                                 
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="charging_animation_bg"
+            android:icon="@drawable/ic_battery_charging"
             android:title="@string/charging_animation_bg_title"
             android:summary="@string/charging_animation_bg_summary"
             android:defaultValue="false" />
             
         <com.superior.support.preferences.SecureSettingSwitchPreference
             android:key="show_clipboard_overlay"
+            android:icon="@drawable/ic_clipboard_alert"
             android:title="@string/show_clipboard_overlay_title"
             android:summary="@string/show_clipboard_overlay_summary"
             android:defaultValue="true"/>
@@ -111,6 +120,7 @@
         <!-- Sensor Block -->
         <Preference
             android:key="sensor_block_settings"
+            android:icon="@drawable/ic_remote"
             android:title="@string/sensor_block_title"
             android:summary="@string/sensor_block_summary"
             android:fragment="com.superior.lab.fragments.SensorBlockSettings"/>

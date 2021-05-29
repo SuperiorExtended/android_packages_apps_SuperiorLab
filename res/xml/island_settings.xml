@@ -22,6 +22,7 @@
 
     <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="island_notification"
+        android:icon="@drawable/ic_message_fast"
         android:title="@string/island_notification_title"
         android:summary="@string/island_notification_summary"
         android:defaultValue="false" />

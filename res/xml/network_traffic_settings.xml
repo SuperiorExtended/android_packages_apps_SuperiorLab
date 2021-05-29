@@ -21,12 +21,14 @@
 
     <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="network_traffic_enabled"
+        android:icon="@drawable/ic_statusbar_network_monitor"
         android:title="@string/network_traffic_settings_title"
         android:summary="@string/network_traffic_settings_summary"
         android:defaultValue="false" />
 
     <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="network_traffic_autohide"
+        android:icon="@drawable/hide_panel"
         android:title="@string/network_traffic_autohide"
         android:summary="@string/network_traffic_autohide_summary"
         android:defaultValue="false"
