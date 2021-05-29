@@ -10,11 +10,13 @@
 
          <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="powermenu_power"
+            android:icon="@drawable/ic_power"
             android:title="@string/powermenu_power"
             android:defaultValue="true" />
 
          <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="powermenu_restart"
+            android:icon="@drawable/ic_restart"
             android:title="@string/powermenu_restart"
             android:defaultValue="true" />
 
@@ -25,11 +27,13 @@
 
          <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="powermenu_settings"
+            android:icon="@drawable/ic_power"
             android:title="@string/powermenu_settings"
             android:defaultValue="false" />
 
          <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="powermenu_lockdown"
+            android:icon="@drawable/ic_lockdown"
             android:title="@string/powermenu_lockdown"
             android:defaultValue="false" />
 
@@ -40,6 +44,7 @@
 
          <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="powermenu_users"
+            android:icon="@drawable/ic_users"
             android:title="@string/powermenu_users"
             android:defaultValue="false" />
 

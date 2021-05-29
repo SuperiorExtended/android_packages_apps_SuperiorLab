@@ -14,11 +14,13 @@
           <Preference
                android:key="power_menu"
                android:title="@string/power_menu_title"
+               android:icon="@drawable/ic_settings_powermenu"
                android:summary="@string/power_menu_title_summary"
                android:fragment="com.superior.lab.fragments.Powermenu" />
 
           <com.superior.support.preferences.SystemSettingSwitchPreference
                android:key="lockscreen_enable_power_menu"
+               android:icon="@drawable/ic_power"
                android:title="@string/lockscreen_enable_power_menu_title"
                android:summary="@string/lockscreen_enable_power_menu_summary"
                android:defaultValue="true" />
@@ -28,6 +30,7 @@
 
     <com.superior.support.preferences.SystemSettingSeekBarPreference
             android:key="transparent_power_menu"
+            android:icon="@drawable/blur_icon"
             android:title="@string/power_menu_transparency"
             android:max="100"
             android:min="0"
@@ -35,6 +38,7 @@
 
     <com.superior.support.preferences.SystemSettingSeekBarPreference
             android:key="transparent_power_dialog_dim"
+            android:icon="@drawable/bb_light_icon"
             android:title="@string/power_menu_dialog_dim"
             android:max="100"
             android:min="0"

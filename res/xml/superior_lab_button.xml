@@ -23,6 +23,7 @@
         
      <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="VOLUME_TEXTVIEW"
+        android:icon="@drawable/ic_font"
         android:title="@string/volume_persen_switch_title"
         android:summary="@string/volume_persen_switch_summary"
         android:defaultValue="false" />
@@ -31,6 +32,7 @@
         android:key="VOLUME_TEXTVIEW_STYLE"                                                   
         android:title="@string/volume_persen_style_title"
         android:summary="%s"
+        android:icon="@drawable/ic_settings_sound"
         android:dialogTitle="@string/volume_persen_style_title"
         android:entries="@array/volume_persen_style_entries"
         android:dependency="VOLUME_TEXTVIEW"                                                     
@@ -39,6 +41,7 @@
 
      <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="volume_rocker_wake"
+        android:icon="@drawable/ic_sleep_off"
         android:title="@string/volume_rocker_wake_title"
         android:summary="@string/volume_rocker_wake_summary"
         android:defaultValue="false"
@@ -46,12 +49,14 @@
         
      <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="volume_answer_call"
+        android:icon="@drawable/ic_answer_call"
         android:title="@string/volume_answer_call_title"
         android:summary="@string/volume_answer_call_summary"
         android:defaultValue="false" />
             
      <ListPreference
         android:key="volume_key_cursor_control"
+        android:icon="@drawable/ic_cursor"
         android:dialogTitle="@string/volbtn_cursor_control_title"
         android:title="@string/volbtn_cursor_control_title"
         android:entries="@array/volbtn_cursor_control_entries"
@@ -61,6 +66,7 @@
 
      <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="volbtn_music_controls"
+        android:icon="@drawable/ic_music"
         android:title="@string/volume_button_music_control_title"
         android:dependency="volume_rocker_wake"
         android:summary="@string/volume_button_music_control_summary"
@@ -68,12 +74,14 @@
         
      <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="navigation_bar_menu_arrow_keys"
+        android:icon="@drawable/ic_arrow_keys"
         android:title="@string/navigation_bar_arrow_keys_title"
         android:summary="@string/navigation_bar_arrow_keys_summary"
         android:defaultValue="false" />
         
      <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="swap_volume_buttons"
+        android:icon="@drawable/ic_rotation"
         android:title="@string/swap_volume_buttons_title"
         android:summary="@string/swap_volume_buttons_summary"
         android:defaultValue="false" />

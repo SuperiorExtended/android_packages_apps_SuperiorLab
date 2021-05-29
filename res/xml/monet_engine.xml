@@ -35,6 +35,7 @@
 
     <com.superior.support.colorpicker.SecureSettingColorPickerPreference
         android:key="monet_engine_color_override"
+        android:icon="@drawable/ic_color_bucket"
         android:title="@string/monet_engine_color_override_title"
         android:dependency="monet_engine_custom_color"
         android:defaultValue="0xFF1b6ef3" />
@@ -47,6 +48,7 @@
 
     <com.superior.support.colorpicker.SecureSettingColorPickerPreference
         android:key="monet_engine_bgcolor_override"
+        android:icon="@drawable/ic_color_bucket"
         android:title="@string/monet_engine_color_override_title"
         android:dependency="monet_engine_custom_bgcolor"
         android:defaultValue="0xFF1b6ef3" />

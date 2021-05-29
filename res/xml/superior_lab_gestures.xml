@@ -13,6 +13,7 @@
 
         <Preference
             android:key="gesture_settings"
+            android:icon="@drawable/ic_settings_gestures"
             android:title="@string/aosp_gesture_preference"
             android:summary="@string/aosp_gesture_summary"
             android:fragment="com.android.settings.gestures.GestureSettings"
@@ -20,24 +21,28 @@
             
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="status_bar_brightness_control"
+            android:icon="@drawable/ic_brightness_auto"
             android:title="@string/status_bar_brightness_control_title"
             android:summary="@string/status_bar_brightness_control_summary"
             android:defaultValue="false" />
             
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="doze_trigger_doubletap"
+            android:icon="@drawable/tap_icon"
             android:title="@string/doze_double_tap_title"
             android:summary="@string/doze_double_tap_summary"
             android:defaultValue="false" />
 
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_gesture"
+            android:icon="@drawable/tap_icon"
             android:title="@string/status_bar_double_tap_to_sleep_title"
             android:summary="@string/status_bar_double_tap_to_sleep_summary"
             android:defaultValue="true" />
             
         <Preference
             android:key="gesture_nav_custom_options"
+            android:icon="@drawable/ic_settings_gestures"
             android:title="@string/navbar_gesture_tweaks_pref_title"
             android:summary="@string/navbar_gesture_tweaks_pref_summary"
             android:fragment="com.superior.lab.fragments.gestures.GestureTweaksSettings"

@@ -24,12 +24,14 @@
 
     <com.superior.support.preferences.SystemSettingSwitchPreference
          android:key="notification_sound_vib_screen_on"
+         android:icon="@drawable/ic_bell_ring"
          android:title="@string/notification_sound_vib_screen_on_title"
          android:summary="@string/notification_sound_vib_screen_on_summary"
          android:defaultValue="true" />
          
     <Preference
         android:key="island_notification"
+        android:icon="@drawable/ic_message_fast"
         android:title="@string/island_notification_title"
         android:summary="@string/island_notification_summary"
         android:fragment="com.superior.lab.fragments.notifications.IslandSettings" />
@@ -37,24 +39,28 @@
     <!-- Heads up -->
     <Preference
         android:key="heads_up_notifications"
+        android:icon="@drawable/ic_headsup"
         android:title="@string/heads_up_notifications"
         android:summary="@string/heads_up_notifications_summary"
         android:fragment="com.superior.lab.fragments.HeadsUpSettings" />
         
     <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="less_boring_heads_up"
+            android:icon="@drawable/ic_headsup_sleep"
             android:title="@string/less_boring_heads_up_title"
             android:summary="@string/less_boring_heads_up_summary"
             android:defaultValue="false" />
             
     <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="notification_guts_kill_app_button"
+            android:icon="@drawable/ic_kill"
             android:title="@string/notification_guts_kill_app_button_title"
             android:summary="@string/notification_guts_kill_app_button_summary"
             android:defaultValue="false" />
             
     <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="notification_material_dismiss"
+            android:icon="@drawable/ic_notification_clear_all"
             android:title="@string/notification_material_dismiss_title"
             android:summary="@string/notification_material_dismiss_summary" />
 
@@ -66,12 +72,14 @@
 
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="pulse_ambient_light"
+            android:icon="@drawable/ic_twilight"
             android:title="@string/pulse_ambient_light_title"
             android:summary="@string/pulse_ambient_light_summary"
             android:defaultValue="false" />
 
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="ambient_light_pulse_for_all"
+            android:icon="@drawable/autoenable_icon"
             android:title="@string/pulse_ambient_light_show_always_title"
             android:summary="@string/pulse_ambient_light_show_always_summary"
             android:defaultValue="false" />
@@ -84,6 +92,7 @@
 
         <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="ambient_notification_light_hide_aod"
+            android:icon="@drawable/vib_pattern_icon"
             android:title="@string/ambient_notification_light_hide_aod_title"
             android:summary="@string/ambient_notification_light_hide_aod_summary"
             android:defaultValue="false"
@@ -149,6 +158,7 @@
 
         <com.superior.support.preferences.SystemSettingListPreference
             android:key="ambient_notification_light_timeout"
+            android:icon="@drawable/ic_clock"
             android:title="@string/ambient_notification_light_timeout_title"
             android:entries="@array/ambient_notification_light_timeout_entries"
             android:entryValues="@array/ambient_notification_light_timeout_values"
@@ -163,16 +173,19 @@
 
          <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
+            android:icon="@drawable/ic_vibrate"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
          <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
+            android:icon="@drawable/ic_vibrate"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
          <com.superior.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
+            android:icon="@drawable/ic_vibrate"
             android:title="@string/incall_vibrate_disconnect_title"
             android:defaultValue="false" />
 

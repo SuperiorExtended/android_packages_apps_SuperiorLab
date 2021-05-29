@@ -10,12 +10,14 @@
     
     <PreferenceScreen
         android:key="monet_engine"
+        android:icon="@drawable/ic_themes"
         android:title="@string/monet_title"
         android:summary="@string/monet_summary"
         android:fragment="com.superior.lab.fragments.ui.MonetSettings" />
         
     <Preference
         android:key="android.theme.customization.style"
+        android:icon="@drawable/ic_ui_styles"
         android:title="@string/theme_customization_ui_style_title"
         android:summary="@string/theme_customization_ui_style_summary"
         android:fragment="com.superior.lab.fragments.UIStyles"/>
@@ -23,12 +25,14 @@
     <!-- Font style -->
     <Preference
         android:key="android.theme.customization.fonts"
+        android:icon="@drawable/ic_font"
         android:title="@string/theme_customization_font_title"
         android:summary="@string/theme_customization_font_summary"
         android:fragment="com.superior.lab.fragments.FontsPicker"/>
         
     <Preference
         android:key="android.theme.customization.lockscreen_clock_font"
+        android:icon="@drawable/ic_font"
         android:title="@string/theme_customization_lock_clock_title"
         android:summary="@string/theme_customization_lock_clock_summary"
         android:fragment="com.superior.lab.fragments.LockClockFonts" />
@@ -36,6 +40,7 @@
     <!-- Icon pack -->
     <Preference
         android:key="android.theme.customization.icon_pack"
+        android:icon="@drawable/ic_drawing"
         android:title="@string/theme_customization_icon_pack_title"
         android:summary="@string/theme_customization_icon_pack_summary"
         android:fragment="com.superior.lab.fragments.StatusbarIcons"/>
@@ -43,6 +48,7 @@
     <!-- Signal icon style -->
     <Preference
         android:key="android.theme.customization.signal_icon"
+        android:icon="@drawable/ic_signal"
         android:title="@string/theme_customization_signal_icon_title"
         android:summary="@string/theme_customization_signal_icon_summary"
         android:fragment="com.superior.lab.fragments.SignalIcons"/>
@@ -50,6 +56,7 @@
     <!-- Data icon style -->  
     <Preference
         android:key="android.theme.customization.sb_data"
+        android:icon="@drawable/ic_data"
         android:title="@string/theme_customization_data_title"
         android:summary="@string/theme_customization_data_summary"
         android:fragment="com.superior.lab.fragments.DataStyles" />
@@ -57,6 +64,7 @@
     <!-- Wifi icon style -->
     <Preference
         android:key="android.theme.customization.wifi_icon"
+        android:icon="@drawable/ic_wifi"
         android:title="@string/theme_customization_wifi_icon_title"
         android:summary="@string/theme_customization_wifi_icon_summary"
         android:fragment="com.superior.lab.fragments.WifiIcons"/>
@@ -70,6 +78,7 @@
     <!-- Volume Styles -->      
     <com.superior.support.preferences.SystemSettingListPreference
         android:key="custom_volume_styles"
+        android:icon="@drawable/ic_settings_sound"
         android:title="@string/volume_style_title"
         android:dialogTitle="@string/volume_style_title"
         android:entries="@array/volume_styles_entries"
@@ -79,6 +88,7 @@
         
     <com.superior.support.preferences.SecureSettingListPreference
         android:key="brightness_slider_style"
+        android:icon="@drawable/brightness_slider_icon"
         android:title="@string/brightness_slider_style_title"
         android:entries="@array/brightness_slider_style_entries"
         android:entryValues="@array/brightness_slider_style_values"
@@ -87,6 +97,7 @@
     <!-- Adaptive icon pack -->
     <Preference
         android:key="android.theme.customization.adaptive_icon_shape"
+        android:icon="@drawable/ic_shapes"
         android:title="@string/theme_customization_icon_shape_title"
         android:summary="@string/theme_customization_icon_shape_summary"
         android:fragment="com.superior.lab.fragments.IconShapes"/>
@@ -94,6 +105,7 @@
     <!-- Navbar Style -->
     <Preference
         android:key="android.theme.customization.navbar"
+        android:icon="@drawable/ic_navbar"
         android:title="@string/theme_customization_navbar_title"
         android:summary="@string/theme_customization_navbar_summary"
         android:fragment="com.superior.lab.fragments.NavbarStyles"/>
