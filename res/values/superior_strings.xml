@@ -886,5 +886,9 @@
     <!-- Wakeup options -->
     <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
+    
+    <!-- Navbar options -->
+   <string name="navigation_bar_arrow_keys_title">Arrow keys</string>
+   <string name="navigation_bar_arrow_keys_summary">Show left &amp; right arrows to control the cursor while typing</string>
 
 </resources>
