@@ -24,6 +24,12 @@
                android:entries="@array/screen_off_animation_entries"
                android:entryValues="@array/screen_off_animation_values"
                android:defaultValue="0" />
+               
+          <com.superior.support.preferences.SystemSettingSwitchPreference
+               android:key="enable_ripple_effect"
+               android:title="@string/enable_fingerprint_ripple_effect_title"
+               android:summary="@string/enable_fingerprint_ripple_effect_summary"
+               android:defaultValue="true" />
      </PreferenceCategory>
      
      <PreferenceCategory
