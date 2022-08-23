@@ -951,4 +951,8 @@
     <string name="brightness_slider_style_line">Thin Outline</string>
     <string name="brightness_slider_style_lighty">Lighty</string>
     
+    <!-- UI styles -->
+    <string name="theme_customization_ui_style_title">UI Style (Beta)</string>
+    <string name="theme_customization_ui_style_summary">Set custom style for your interface</string>
+    
 </resources>

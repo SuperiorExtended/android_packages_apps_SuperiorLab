@@ -13,6 +13,12 @@
         android:title="@string/monet_title"
         android:summary="@string/monet_summary"
         android:fragment="com.superior.lab.fragments.ui.MonetSettings" />
+        
+    <Preference
+        android:key="android.theme.customization.style"
+        android:title="@string/theme_customization_ui_style_title"
+        android:summary="@string/theme_customization_ui_style_summary"
+        android:fragment="com.superior.lab.fragments.UIStyles"/>
 
     <!-- Font style -->
     <Preference
