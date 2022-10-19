@@ -24,6 +24,12 @@
                android:entryValues="@array/quick_pulldown_values"
                android:defaultValue="0" />
                
+          <com.superior.support.preferences.SystemSettingSwitchPreference
+               android:key="qs_dual_tone"
+               android:title="@string/qs_dual_tone_title"
+               android:summary="@string/qs_dual_tone_summary"
+               android:defaultValue="true" />
+               
           <com.superior.support.preferences.SystemSettingSeekBarPreference
                android:key="qs_transparency"
                android:title="@string/qs_transparency_title"
