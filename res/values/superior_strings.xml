@@ -926,4 +926,9 @@
      <string name="status_bar_double_tap_to_sleep_title">Tap to sleep</string>
      <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar or
           lockscreen to turn off the display</string>
+
+    <!-- Custom Fonts -->
+    <string name="theme_customization_lock_clock_title">Lockscreen clock font</string>
+    <string name="theme_customization_lock_clock_summary">Set LS clock font style</string>
+    
 </resources>
