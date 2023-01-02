@@ -20,6 +20,12 @@
         android:title="@string/theme_customization_font_title"
         android:summary="@string/theme_customization_font_summary"
         android:fragment="com.superior.lab.fragments.FontsPicker"/>
+        
+    <Preference
+        android:key="android.theme.customization.lockscreen_clock_font"
+        android:title="@string/theme_customization_lock_clock_title"
+        android:summary="@string/theme_customization_lock_clock_summary"
+        android:fragment="com.superior.lab.fragments.LockClockFonts" />
 
     <!-- Icon pack -->
     <Preference
@@ -73,4 +79,15 @@
         android:summary="@string/theme_customization_navbar_summary"
         android:fragment="com.superior.lab.fragments.NavbarStyles"/>
 
+<<<<<<< HEAD
+=======
+        <!-- Navbar Style -->
+        <Preference
+            android:key="android.theme.customization.navbar"
+            android:title="@string/theme_customization_navbar_title"
+            android:summary="@string/theme_customization_navbar_summary"
+            android:fragment="com.superior.lab.fragments.NavbarStyles" />
+
+    </PreferenceCategory>
+>>>>>>> df68a674 (SuperiorLab: Add support for Lockscreen clock fonts [2/2])
 </PreferenceScreen>
