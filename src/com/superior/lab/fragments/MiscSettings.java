@@ -40,12 +40,14 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
 import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.util.superior.systemUtils;
 import com.superior.lab.fragments.SmartPixels;
+import com.superior.support.preferences.SystemSettingListPreference;
 
 @SearchIndexable
 public class MiscSettings extends SettingsPreferenceFragment implements
@@ -53,9 +55,11 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         
     private static final String SETTINGS_HEADER_IMAGE_RANDOM = "settings_header_image_random";
     private static final String SMART_PIXELS = "smart_pixels";
+    private static final String ABOUT_PHONE_STYLE = "header_style";
 
     private Preference mSettingsHeaderImageRandom;
     private Preference mSmartPixels;
+    private SystemSettingListPreference mAboutPhoneStyle;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -67,7 +71,8 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         
         mSettingsHeaderImageRandom = findPreference(SETTINGS_HEADER_IMAGE_RANDOM);
         mSettingsHeaderImageRandom.setOnPreferenceChangeListener(this);
-        
+        mAboutPhoneStyle = (SystemSettingListPreference) findPreference(ABOUT_PHONE_STYLE);
+        mAboutPhoneStyle.setOnPreferenceChangeListener(this);
         mSmartPixels = (Preference) prefScreen.findPreference(SMART_PIXELS);
         boolean mSmartPixelsSupported = getResources().getBoolean(
                 com.android.internal.R.bool.config_supportSmartPixels);
@@ -87,7 +92,10 @@ public class MiscSettings extends SettingsPreferenceFragment implements
 	if (preference == mSettingsHeaderImageRandom) {
             systemUtils.showSettingsRestartDialog(getContext());
             return true;
-          }
+        } else if (preference == mAboutPhoneStyle) {
+            systemUtils.showSettingsRestartDialog(getContext());
+            return true;
+        }
         return false;
     }
 

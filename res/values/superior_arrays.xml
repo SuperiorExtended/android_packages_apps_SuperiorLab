@@ -771,5 +771,26 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+    
+    <!-- About phone styles-->
+    <string-array name="about_style_entries" translatable="false">
+        <item>@string/about_header_blur</item>
+        <item>@string/about_header_scrim</item>
+        <item>@string/about_header_none</item>
+        <item>@string/about_header_accent</item>
+        <item>@string/about_header_random</item>
+        <item>@string/about_header_lottie1</item>
+        <item>@string/about_header_lottie2</item>
+    </string-array>
+
+    <string-array name="about_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
 
 </resources>

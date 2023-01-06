@@ -763,5 +763,15 @@
     <!-- Ambient Ticker -->
     <string name="pulse_on_new_tracks_title">Music ticker</string>
     <string name="pulse_on_new_tracks_summary">Show music ticker on Ambient Display during track change</string>
+     
+     <!-- Header styles -->
+    <string name="about_header_title">Header style</string>
+    <string name="about_header_blur">BlurView</string>
+    <string name="about_header_scrim">AccentScrim</string>
+    <string name="about_header_none">Clean</string>
+    <string name="about_header_accent">Accent</string>
+    <string name="about_header_random">Slim Random</string>
+    <string name="about_header_lottie1">Lottie1</string>
+    <string name="about_header_lottie2">Lottie2</string>
 
 </resources>
