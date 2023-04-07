@@ -33,6 +33,16 @@
      </PreferenceCategory>
      
      <PreferenceCategory
+          android:title="@string/lockscreen_clock_title">
+
+          <com.superior.support.preferences.SecureSettingSwitchPreference
+               android:key="lockscreen_double_line_clock_switch"
+               android:title="@string/lockscreen_double_line_clock_setting_toggle"
+               android:summary="@string/lockscreen_double_line_clock_summary"
+               android:defaultValue="false" />
+     </PreferenceCategory>
+     
+     <PreferenceCategory
         android:key="ambient_display"
         android:title="@string/ambient_display_category" >
 
