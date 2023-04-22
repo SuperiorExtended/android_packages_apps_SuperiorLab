@@ -245,6 +245,12 @@
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">Background chip</string>
     <string name="statusbar_clock_chip_summary">Display accented chip behind clock</string>
+    <string name="solid_accent">Accent</string>
+    <string name="outline">Outline</string>
+    <string name="solid_accent_gradient">Gradient</string>
+    <string name="accent1">Accent Leafy</string>
+    <string name="outline1">Outline Leafy</string>
+    <string name="gradiant1">Gradient Leafy</string>
     
     <!-- Data disabled icon -->
     <string name="data_disabled_icon_title">Show data disabled icon</string>
