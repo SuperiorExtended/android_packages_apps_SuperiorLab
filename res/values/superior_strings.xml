@@ -939,5 +939,11 @@
     <!-- Custom Fonts -->
     <string name="theme_customization_lock_clock_title">Lockscreen clock font</string>
     <string name="theme_customization_lock_clock_summary">Set LS clock font style</string>
+
+    <!-- Brightness slider styles -->
+    <string name="brightness_slider_style_title">Brightness slider style</string>
+    <string name="brightness_slider_style_default">Default</string>
+    <string name="brightness_slider_style_filled">Filled</string>
+    <string name="brightness_slider_style_thin">Thin</string>
     
 </resources>
