@@ -968,4 +968,7 @@
     <string name="spoof_storage_encryption_status_title">Use storage encryption spoofing</string>
     <string name="spoof_storage_encryption_status_summary">Spoof storage encryption status to encrypted.</string>
     
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Always show when charging</string>
+    <string name="doze_on_charge_summary">Display device is charging</string>
 </resources>
