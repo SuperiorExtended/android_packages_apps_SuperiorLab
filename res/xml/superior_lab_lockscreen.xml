@@ -53,6 +53,12 @@
                android:title="@string/wakeup_when_plugged_unplugged_title"
                android:summary="@string/wakeup_when_plugged_unplugged_summary"
                android:defaultValue="true" /> 
+               
+          <com.superior.support.preferences.SecureSettingSwitchPreference
+               android:key="doze_on_charge"
+               android:defaultValue="false"
+               android:title="@string/doze_on_charge_title"
+               android:summary="@string/doze_on_charge_summary" />
 
           <com.superior.support.preferences.SystemSettingSwitchPreference
                android:key="pocket_judge"
