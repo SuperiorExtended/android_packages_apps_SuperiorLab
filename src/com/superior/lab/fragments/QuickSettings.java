@@ -51,6 +51,7 @@ import android.text.TextUtils;
 import android.view.View;
 
 import com.superior.support.preferences.SystemSettingListPreference;
+import com.superior.support.preferences.SystemSettingSeekBarPreference;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -60,6 +61,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
     private static final String QS_PAGE_TRANSITIONS = "custom_transitions_page_tile";
     private static final String KEY_QS_PANEL_STYLE = "qs_panel_style";
+    private static final String KEY_PREF_TILE_ANIM_STYLE = "qs_tile_animation_style";
+    private static final String KEY_PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
+    private static final String KEY_PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
 
     private Handler mHandler;
     private IOverlayManager mOverlayManager;
@@ -67,6 +71,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private SystemSettingListPreference mQsStyle;
     private ListPreference mQuickPulldown;
     private SystemSettingListPreference mPageTransitions;
+    private ListPreference mTileAnimationStyle;
+    private SystemSettingSeekBarPreference mTileAnimationDuration;
+    private ListPreference mTileAnimationInterpolator;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -96,6 +103,16 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
         mQsStyle = (SystemSettingListPreference) findPreference(KEY_QS_PANEL_STYLE);
         mCustomSettingsObserver.observe();
+        
+        mTileAnimationStyle = (ListPreference) findPreference(KEY_PREF_TILE_ANIM_STYLE);
+        mTileAnimationDuration = (SystemSettingSeekBarPreference) findPreference(KEY_PREF_TILE_ANIM_DURATION);
+        mTileAnimationInterpolator = (ListPreference) findPreference(KEY_PREF_TILE_ANIM_INTERPOLATOR);
+
+        mTileAnimationStyle.setOnPreferenceChangeListener(this);
+
+        int tileAnimationStyle = Settings.System.getIntForUser(resolver,
+                Settings.System.QS_TILE_ANIMATION_STYLE, 0, UserHandle.USER_CURRENT);
+        updateAnimTileStyle(tileAnimationStyle);
 
     }
     
@@ -145,8 +162,17 @@ public class QuickSettings extends SettingsPreferenceFragment implements
               } else if (preference == mQsStyle) {
                mCustomSettingsObserver.observe();
             return true;
+            } else if (preference == mTileAnimationStyle) {
+             int value = Integer.parseInt((String) newValue);
+             updateAnimTileStyle(value);
+             return true;
           } 
         return false;
+    }
+    
+    private void updateAnimTileStyle(int tileAnimationStyle) {
+        mTileAnimationDuration.setEnabled(tileAnimationStyle != 0);
+        mTileAnimationInterpolator.setEnabled(tileAnimationStyle != 0);
     }
     
     public static void reset(Context mContext) {
