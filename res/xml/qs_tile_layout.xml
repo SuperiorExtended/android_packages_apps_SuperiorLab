@@ -57,6 +57,15 @@
             android:defaultValue="2"
             android:max="5"
             settings:min="1" />
+            
+        <com.superior.support.preferences.SystemSettingSeekBarPreference
+            android:key="qs_tile_label_size"
+            android:title="@string/qs_tile_label_size_title"
+            android:max="15"
+            settings:min="10"
+            settings:interval="1"
+            settings:units="sp"
+            android:defaultValue="14" />
 
         <com.android.settingslib.widget.LayoutPreference
             android:key="apply_change_button"
