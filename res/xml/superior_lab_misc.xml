@@ -51,6 +51,12 @@
             android:summary="@string/use_photos_spoof_summary"
             android:defaultValue="true" />
             
+        <com.superior.support.preferences.SecureSettingSwitchPreference
+            android:key="spoof_storage_encryption_status"
+            android:title="@string/spoof_storage_encryption_status_title"
+            android:summary="@string/spoof_storage_encryption_status_summary"
+            android:defaultValue="false"/>
+            
         <com.superior.support.preferences.SystemSettingListPreference
             android:key="settings_dashboard_style"
             android:title="@string/settings_style_title"
