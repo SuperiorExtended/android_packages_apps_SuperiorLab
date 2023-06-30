@@ -83,6 +83,12 @@
                android:defaultValue="true" />
                
           <com.superior.support.preferences.SystemSettingSwitchPreference
+               android:key="qs_brightness_slider_haptic"
+               android:title="@string/qs_brightness_slider_haptic_title"
+               android:summary="@string/qs_brightness_slider_haptic_summary"
+               android:defaultValue="false" />
+               
+          <com.superior.support.preferences.SystemSettingSwitchPreference
                android:title="Brightness Percentage"
                android:key="BRIGHTNESS_TEXTVIEW"
                android:summary="show hide brightness percentage text"
