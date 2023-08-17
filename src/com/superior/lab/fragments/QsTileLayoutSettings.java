@@ -15,9 +15,9 @@
 package com.superior.lab.fragments;
 
 import android.database.ContentObserver;
-import android.content.Context;
 import android.content.ContentResolver;
 import android.net.Uri;
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.UserHandle;
@@ -33,15 +33,16 @@ import com.android.internal.util.systemui.qs.QSLayoutUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+
 import com.android.internal.util.superior.ThemeUtils;
 
 import com.android.settingslib.widget.LayoutPreference;
 
-import com.superior.support.preferences.SystemSettingSeekBarPreference;
+import com.superior.lab.preferences.CustomSeekBarPreference;
 import com.superior.support.preferences.SystemSettingSwitchPreference;
 import com.superior.support.preferences.SystemSettingListPreference;
 
-public class QsLayoutSettings extends SettingsPreferenceFragment
+public class QsTileLayoutSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_QS_HIDE_LABEL = "qs_tile_label_hide";
@@ -49,15 +50,15 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     private static final String KEY_QS_COLUMN_PORTRAIT = "qs_layout_columns";
     private static final String KEY_QS_ROW_PORTRAIT = "qs_layout_rows";
     private static final String KEY_QQS_ROW_PORTRAIT = "qqs_layout_rows";
-    private static final String KEY_QS_UI_STYLE  = "qs_ui_style";
     private static final String KEY_APPLY_CHANGE_BUTTON = "apply_change_button";
+    private static final String KEY_QS_UI_STYLE  = "qs_ui_style";
     private static final String overlayThemeTarget  = "com.android.systemui";
 
     private Context mContext;
 
-    private SystemSettingSeekBarPreference mQsColumns;
-    private SystemSettingSeekBarPreference mQsRows;
-    private SystemSettingSeekBarPreference mQqsRows;
+    private CustomSeekBarPreference mQsColumns;
+    private CustomSeekBarPreference mQsRows;
+    private CustomSeekBarPreference mQqsRows;
     private SystemSettingListPreference mQsUI;
     private Handler mHandler;
     private ThemeUtils mThemeUtils;
@@ -72,7 +73,7 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     @Override
     public void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
-        addPreferencesFromResource(R.xml.superior_lab_quicksettings);
+        addPreferencesFromResource(R.xml.qs_tile_layout);
         
         mThemeUtils = new ThemeUtils(getActivity());
 
@@ -84,13 +85,13 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mQsColumns = (SystemSettingSeekBarPreference) findPreference(KEY_QS_COLUMN_PORTRAIT);
+        mQsColumns = (CustomSeekBarPreference) findPreference(KEY_QS_COLUMN_PORTRAIT);
         mQsColumns.setOnPreferenceChangeListener(this);
 
-        mQsRows = (SystemSettingSeekBarPreference) findPreference(KEY_QS_ROW_PORTRAIT);
+        mQsRows = (CustomSeekBarPreference) findPreference(KEY_QS_ROW_PORTRAIT);
         mQsRows.setOnPreferenceChangeListener(this);
 
-        mQqsRows = (SystemSettingSeekBarPreference) findPreference(KEY_QQS_ROW_PORTRAIT);
+        mQqsRows = (CustomSeekBarPreference) findPreference(KEY_QQS_ROW_PORTRAIT);
         mQqsRows.setOnPreferenceChangeListener(this);
 
         mContext = getContext();
@@ -168,6 +169,11 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
         }
         return true;
     }
+
+    @Override
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.SUPERIOR;
+    }
     
     private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
     private class CustomSettingsObserver extends ContentObserver {
@@ -191,7 +197,7 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
             }
         }
     }
-    
+
     private void updateQsStyle() {
         ContentResolver resolver = getActivity().getContentResolver();
 
@@ -214,11 +220,6 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
 
     public void setQsStyle(String overlayName, String category) {
         mThemeUtils.setOverlayEnabled(category, overlayName, overlayThemeTarget);
-    }
-
-    @Override
-    public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SUPERIOR;
     }
 
     private void initPreference() {

@@ -92,63 +92,17 @@
      <PreferenceCategory
           android:title="@string/qs_tile_title">
           
+          <Preference
+        	android:key="qs_tile_layout"
+        	android:title="@string/qs_tile_layout_title"
+        	android:summary="@string/qs_tile_layout_summary"
+        	android:fragment="com.superior.lab.fragments.QsTileLayoutSettings" />
+          
           <com.superior.support.preferences.SecureSettingSwitchPreference
             android:key="quick_settings_vibrate"
             android:title="@string/quick_settings_vibrate_title"
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
-            
-          <com.superior.support.preferences.SystemSettingListPreference
-                android:key="qs_ui_style"
-        	android:title="@string/qs_ui_title"
-        	android:entries="@array/qs_ui_entries"
-        	android:entryValues="@array/qs_ui_values"
-        	android:summary="%s"
-        	android:defaultValue="0" />
-        	
-          <com.superior.support.preferences.SecureSettingListPreference
-                android:key="qs_tile_shape"
-                android:title="@string/qs_tile_shape"
-                android:entries="@array/qs_tile_shape_entries"
-                android:entryValues="@array/qs_tile_shape_values"
-                android:defaultValue="2" />
-            
-          <com.superior.support.preferences.SystemSettingSeekBarPreference
-            android:key="qs_layout_columns"
-            android:title="@string/qs_columns_portrait_title"
-            android:defaultValue="2"
-            android:max="6"
-            settings:min="2" />
-
-        <com.superior.support.preferences.SystemSettingSeekBarPreference
-            android:key="qs_layout_rows"
-            android:title="@string/qs_rows_portrait_title"
-            android:defaultValue="4"
-            android:max="6"
-            settings:min="2" />
-
-        <com.superior.support.preferences.SystemSettingSeekBarPreference
-            android:key="qqs_layout_rows"
-            android:title="@string/qqs_rows_portrait_title"
-            android:defaultValue="2"
-            android:max="5"
-            settings:min="1" />
-
-        <com.superior.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_tile_label_hide"
-            android:title="@string/qs_tile_hide_label_title"
-            android:summary="@string/qs_tile_hide_label_summary"
-            android:defaultValue="false" />
-
-        <com.superior.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_tile_vertical_layout"
-            android:title="@string/qs_tile_vertical_layout_title"
-            android:summary="@string/qs_tile_vertical_layout_summary"
-            android:defaultValue="false" />
-
-        <com.android.settingslib.widget.LayoutPreference
-            android:key="apply_change_button"
-            android:layout="@layout/qs_tile_apply_change_button" />
 
      </PreferenceCategory>
 </PreferenceScreen>
