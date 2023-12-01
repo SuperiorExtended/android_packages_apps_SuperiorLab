@@ -876,5 +876,11 @@
     <!-- Unlock FPS for specific games -->
     <string name="games_spoof_title">Unlock higher FPS in games</string>
     <string name="games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    
+     <!-- Status bar padding -->
+    <string name="statusbar_padding">Status bar padding</string>
+    <string name="statusbar_top_padding">Top padding</string>
+    <string name="statusbar_left_padding">Left padding</string>
+    <string name="statusbar_right_padding">Right padding</string>
 
 </resources>
