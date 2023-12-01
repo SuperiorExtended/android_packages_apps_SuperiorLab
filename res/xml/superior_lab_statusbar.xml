@@ -162,4 +162,28 @@
             android:defaultValue="true" />
 
     </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="statusbar_padding"
+        android:title="@string/statusbar_padding">
+
+        <com.superior.support.preferences.SystemSettingSeekBarPreference
+            android:key="statusbar_top_padding"
+            android:max="10"
+            android:title="@string/statusbar_top_padding"
+            settings:min="-2" />
+
+        <com.superior.support.preferences.SystemSettingSeekBarPreference
+            android:key="statusbar_left_padding"
+            android:title="@string/statusbar_left_padding"
+            android:max="100"
+            android:min="-10" />
+
+        <com.superior.support.preferences.SystemSettingSeekBarPreference
+            android:key="statusbar_right_padding"
+            android:title="@string/statusbar_right_padding"
+            android:max="100"
+            android:min="-10" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
