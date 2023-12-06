@@ -738,4 +738,10 @@
     <string name="volume_answer_call_title">Answer call</string>
     <string name="volume_answer_call_summary">Answer incoming calls by pressing the volume buttons</string>
     
+    <!-- Volume cursor -->
+    <string name="volbtn_cursor_control_title">Keyboard cursor control</string>
+    <string name="volbtn_cursor_control_off">Disabled</string>
+    <string name="volbtn_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volbtn_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    
 </resources>
