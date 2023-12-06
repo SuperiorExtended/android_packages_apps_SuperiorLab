@@ -27,6 +27,12 @@
         android:summary="@string/volume_rocker_wake_summary"
         android:defaultValue="false"
         android:disableDependentsState="true" />
+        
+     <com.superior.support.preferences.SystemSettingSwitchPreference
+        android:key="volume_answer_call"
+        android:title="@string/volume_answer_call_title"
+        android:summary="@string/volume_answer_call_summary"
+        android:defaultValue="false" />
 
      <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="volbtn_music_controls"
