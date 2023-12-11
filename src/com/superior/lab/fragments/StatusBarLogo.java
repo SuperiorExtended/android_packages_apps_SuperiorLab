@@ -40,6 +40,8 @@ import com.android.settings.Utils;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
+import com.superior.support.preferences.SystemSettingListPreference;
+import com.superior.support.colorpicker.ColorPickerPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,6 +51,11 @@ public class StatusBarLogo extends DashboardFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "StatusBarLogo";
+    private static final String LOGO_COLOR = "status_bar_logo_color";
+    private static final String LOGO_COLOR_PICKER = "status_bar_logo_color_picker";
+    
+    private SystemSettingListPreference mLogoColor;
+    private ColorPickerPreference mLogoColorPicker;
 
     @Override
     protected int getPreferenceScreenResId() {
@@ -58,11 +65,66 @@ public class StatusBarLogo extends DashboardFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+        
+        mLogoColor = (SystemSettingListPreference) findPreference(LOGO_COLOR);
+        int logoColor = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_LOGO_COLOR, 0, UserHandle.USER_CURRENT);
+        mLogoColor.setValue(String.valueOf(logoColor));
+        mLogoColor.setSummary(mLogoColor.getEntry());
+        mLogoColor.setOnPreferenceChangeListener(this);
+
+        mLogoColorPicker = (ColorPickerPreference) findPreference(LOGO_COLOR_PICKER);
+        int logoColorPicker = Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_LOGO_COLOR_PICKER, 0xFFFFFFFF);
+        mLogoColorPicker.setNewPreviewColor(logoColorPicker);
+        String logoColorPickerHex = String.format("#%08x", (0xFFFFFFFF & logoColorPicker));
+        if (logoColorPickerHex.equals("#ffffffff")) {
+            mLogoColorPicker.setSummary(R.string.default_string);
+        } else {
+            mLogoColorPicker.setSummary(logoColorPickerHex);
+        }
+        mLogoColorPicker.setOnPreferenceChangeListener(this);
+
+        updateColorPrefs(logoColor);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+    if (preference == mLogoColor) {
+        String newStringValue = (String) newValue;
+        if (mLogoColor.findIndexOfValue(newStringValue) >= 0) {
+            int logoColor = Integer.valueOf(newStringValue);
+            int index = mLogoColor.findIndexOfValue(newStringValue);
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.STATUS_BAR_LOGO_COLOR, logoColor, UserHandle.USER_CURRENT);
+            mLogoColor.setSummary(mLogoColor.getEntries()[index]);
+            updateColorPrefs(logoColor);
+            return true;
+        }
+    } else if (preference == mLogoColorPicker) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            if (hex.equals("#ffffffff")) {
+                preference.setSummary(R.string.default_string);
+            } else {
+                preference.setSummary(hex);
+            }
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.STATUS_BAR_LOGO_COLOR_PICKER, intHex);
+            return true;
+        }
         return false;
+    }
+    
+    private void updateColorPrefs(int logoColor) {
+    if (mLogoColor != null) {
+        if (logoColor == 2) {
+            getPreferenceScreen().addPreference(mLogoColorPicker);
+        } else {
+            getPreferenceScreen().removePreference(mLogoColorPicker);
+               }
+        }
     }
 
     @Override

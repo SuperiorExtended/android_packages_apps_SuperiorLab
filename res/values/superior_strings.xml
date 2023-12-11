@@ -421,6 +421,12 @@
     <string name="status_bar_logo_style_windows">Windows</string>
     <string name="status_bar_logo_style_xbox">Xbox</string>
     
+    <!-- Statusbar logo color -->
+    <string name="status_bar_logo_color_title">Color</string>
+    <string name="status_bar_logo_color_default">Default (White)</string>
+    <string name="status_bar_logo_color_accent">Accent</string>
+    <string name="status_bar_logo_color_custom">Custom</string>
+    
     <!-- Clock Format -->
     <string name="clock_use_single_line_title">Lockscreen clock Format</string>
     <string name="default_string">Default</string>

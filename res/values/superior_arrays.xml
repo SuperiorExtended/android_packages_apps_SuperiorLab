@@ -238,6 +238,18 @@
         <item>30</item>
     </string-array>
     
+    <!-- Statusbar logo color -->
+    <string-array name="status_bar_logo_color_entries" translatable="false">
+        <item>@string/status_bar_logo_color_default</item>
+        <item>@string/status_bar_logo_color_accent</item>
+        <item>@string/status_bar_logo_color_custom</item>
+    </string-array>
+    <string-array name="status_bar_logo_color_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
     <string-array name="clock_use_single_line_entries" translatable="false">
    	<item>@string/default_string</item>
         <item>@string/single_line</item>

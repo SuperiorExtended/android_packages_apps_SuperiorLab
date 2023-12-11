@@ -32,4 +32,16 @@
         android:entryValues="@array/status_bar_logo_style_values"
         android:dependency="status_bar_logo"
         android:defaultValue="0" />
+        
+    <com.superior.support.preferences.SystemSettingListPreference
+        android:key="status_bar_logo_color"
+        android:title="@string/status_bar_logo_color_title"
+        android:entries="@array/status_bar_logo_color_entries"
+        android:entryValues="@array/status_bar_logo_color_values"
+        android:defaultValue="0" />
+
+    <com.superior.support.colorpicker.ColorPickerPreference
+        android:key="status_bar_logo_color_picker"
+        android:title="@string/status_bar_logo_color_custom"
+        settings:defaultValue="0xFFFFFFFF" />
 </PreferenceScreen>
