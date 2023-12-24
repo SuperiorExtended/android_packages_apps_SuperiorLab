@@ -897,5 +897,8 @@
     <!-- Wi-Fi Standard icon -->
     <string name="show_wifi_standard_icon_title">Show Wi-Fi type icon</string>
     <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+    
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Header Image</string>
 
 </resources>
