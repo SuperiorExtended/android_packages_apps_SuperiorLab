@@ -507,4 +507,8 @@
     <string name="monet_engine_style_muted">Muted</string>
     <string name="monet_engine_style_content">Content</string>
     
+    <!-- Show clipboard overlay -->
+    <string name="show_clipboard_overlay_title">Show clipboard overlay</string>
+    <string name="show_clipboard_overlay_summary">Show an overlay in the left bottom corner of the screen when something is copied to the clipboard</string>
+    
 </resources>

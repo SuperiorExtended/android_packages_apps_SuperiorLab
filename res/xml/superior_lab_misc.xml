@@ -38,6 +38,12 @@
             android:title="@string/charging_animation_bg_title"
             android:summary="@string/charging_animation_bg_summary"
             android:defaultValue="false" />
+            
+        <com.superior.support.preferences.SecureSettingSwitchPreference
+            android:key="show_clipboard_overlay"
+            android:title="@string/show_clipboard_overlay_title"
+            android:summary="@string/show_clipboard_overlay_summary"
+            android:defaultValue="true"/>
 
     </PreferenceCategory>
 </PreferenceScreen>
