@@ -29,7 +29,7 @@
                android:key="enable_ripple_effect"
                android:title="@string/enable_fingerprint_ripple_effect_title"
                android:summary="@string/enable_fingerprint_ripple_effect_summary"
-               android:defaultValue="true" />
+               android:defaultValue="true" />                         
      </PreferenceCategory>
      
      <PreferenceCategory
@@ -41,6 +41,7 @@
                android:title="@string/ambient_wake_gestures_title"
                android:summary="@string/ambient_wake_gestures_summary"
                android:defaultValue="false" />
+                         
      </PreferenceCategory>
 
      <PreferenceCategory
@@ -67,6 +68,12 @@
                android:fragment="com.superior.lab.fragments.PulseSettings"
                android:title="@string/pulse_settings"
                android:summary="@string/pulse_settings_summary" />
+               
+          <com.superior.support.preferences.SecureSettingSwitchPreference
+               android:key="pulse_on_new_tracks"
+               android:title="@string/pulse_on_new_tracks_title"
+               android:summary="@string/pulse_on_new_tracks_summary"
+               android:defaultValue="false" />
      </PreferenceCategory>
      <PreferenceCategory
         android:title="@string/weather_category_title">
