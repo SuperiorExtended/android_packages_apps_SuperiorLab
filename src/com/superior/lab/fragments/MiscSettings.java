@@ -56,10 +56,12 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     private static final String SETTINGS_HEADER_IMAGE_RANDOM = "settings_header_image_random";
     private static final String SMART_PIXELS = "smart_pixels";
     private static final String ABOUT_PHONE_STYLE = "header_style";
+    private static final String SETTINGS_DASHBOARD_STYLE = "settings_dashboard_style";
 
     private Preference mSettingsHeaderImageRandom;
     private Preference mSmartPixels;
     private SystemSettingListPreference mAboutPhoneStyle;
+    private SystemSettingListPreference mDashBoardStyle;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -73,6 +75,8 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         mSettingsHeaderImageRandom.setOnPreferenceChangeListener(this);
         mAboutPhoneStyle = (SystemSettingListPreference) findPreference(ABOUT_PHONE_STYLE);
         mAboutPhoneStyle.setOnPreferenceChangeListener(this);
+        mDashBoardStyle = (SystemSettingListPreference) findPreference(SETTINGS_DASHBOARD_STYLE);
+        mDashBoardStyle.setOnPreferenceChangeListener(this);
         mSmartPixels = (Preference) prefScreen.findPreference(SMART_PIXELS);
         boolean mSmartPixelsSupported = getResources().getBoolean(
                 com.android.internal.R.bool.config_supportSmartPixels);
@@ -95,7 +99,10 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         } else if (preference == mAboutPhoneStyle) {
             systemUtils.showSettingsRestartDialog(getContext());
             return true;
-        }
+        } else if (preference == mDashBoardStyle) {
+            systemUtils.showSettingsRestartDialog(getContext());
+            return true;
+        }    
         return false;
     }
 

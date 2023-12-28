@@ -773,5 +773,11 @@
     <string name="about_header_random">Slim Random</string>
     <string name="about_header_lottie1">Lottie1</string>
     <string name="about_header_lottie2">Lottie2</string>
+    
+    <!-- Settings styles -->
+    <string name="settings_style_title">Settings style</string>
+    <string name="settings_with_header">with Header</string>
+    <string name="settings_without_header">Without Header</string>
+    <string name="settings_with_single_layout">Simple</string>
 
 </resources>
