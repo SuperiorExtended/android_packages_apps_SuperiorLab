@@ -779,5 +779,9 @@
     <string name="settings_with_header">with Header</string>
     <string name="settings_without_header">Without Header</string>
     <string name="settings_with_single_layout">Simple</string>
+    
+    <!-- Material dismiss all button for notifications -->
+    <string name="notification_material_dismiss_title">Clear all notification button</string>
+    <string name="notification_material_dismiss_summary">Replace clear all notification text with material style floating button</string>
 
 </resources>
