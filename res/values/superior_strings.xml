@@ -53,9 +53,11 @@
      <string name="save">Save</string>
 
      <!-- Units -->
-     <string name="unit_seconds">seconds</string>
      <string name="unit_milliseconds">milliseconds</string>
-     <string name="unit_pixels">dp</string>
+     <string name="unit_percent" translatable="false">\u0025</string>
+     <string name="unit_pixels" translatable="false">dp</string>
+     <string name="unit_seconds">seconds</string>
+     <string name="unit_x1000ms" translatable="false">x1000 ms</string>
 
      <!-- Sub category -->
      <string name="general_category">General</string>
@@ -157,6 +159,7 @@
      <string name="clock_date_position">Date position</string>
      <string name="clock_date_right">Right of time</string>
      <string name="clock_date_left">Left of time</string>
+     <string name="clock_font_size_title">Clock font size</string>
 
      <!-- Quick Settings brightness slider -->
      <string name="qs_show_brightness_slider_title">Brightness slider</string>
