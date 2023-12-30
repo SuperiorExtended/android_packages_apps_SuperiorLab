@@ -90,6 +90,12 @@
             android:title="@string/sensor_block_title"
             android:summary="@string/sensor_block_summary"
             android:fragment="com.superior.lab.fragments.SensorBlockSettings"/>
+            
+        <com.superior.support.preferences.SystemSettingSwitchPreference
+            android:key="arcane_idle_manager"
+            android:title="@string/idle_manager_title"
+            android:summary="@string/idle_manager_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 </PreferenceScreen>
