@@ -29,7 +29,13 @@
                android:key="enable_ripple_effect"
                android:title="@string/enable_fingerprint_ripple_effect_title"
                android:summary="@string/enable_fingerprint_ripple_effect_summary"
-               android:defaultValue="true" />                         
+               android:defaultValue="true" />   
+
+          <com.superior.support.preferences.SystemSettingSwitchPreference
+               android:key="pocket_judge"
+               android:title="@string/pocket_judge_title"
+               android:summary="@string/pocket_judge_summary"
+               android:defaultValue="false" />                      
      </PreferenceCategory>
      
      <PreferenceCategory
