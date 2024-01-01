@@ -892,5 +892,9 @@
    <string name="navigation_bar_arrow_keys_summary">Show left &amp; right arrows to control the cursor while typing</string>
    <string name="navbar_compact_layout_title">Compact layout</string>
     <string name="navbar_compact_layout_summary">Use a compact layout in the navigation bar</string>
+    
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Show Wi-Fi type icon</string>
+    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
 
 </resources>
