@@ -872,5 +872,9 @@
     <string name="status_bar_lyric_options_title">Options</string>
     <string name="disguise_props_for_music_app_title">Disguise device for music apps</string>
     <string name="disguise_props_for_music_app_summary">Disguise device in some music applications for support status bar lyric. After changing this toggle, you have to restart applications for the change to take effect.</string>
+    
+    <!-- Unlock FPS for specific games -->
+    <string name="games_spoof_title">Unlock higher FPS in games</string>
+    <string name="games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
 
 </resources>
