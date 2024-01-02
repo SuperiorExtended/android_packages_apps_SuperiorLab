@@ -39,6 +39,12 @@
             android:summary="@string/smart_pixels_summary" 
             android:fragment="com.superior.lab.fragments.SmartPixels" />
             
+        <com.superior.support.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pixelprops.games"
+            android:title="@string/games_spoof_title"
+            android:summary="@string/games_spoof_summary"
+            android:defaultValue="false" />
+            
         <com.superior.support.preferences.SystemSettingListPreference
             android:key="settings_dashboard_style"
             android:title="@string/settings_style_title"
