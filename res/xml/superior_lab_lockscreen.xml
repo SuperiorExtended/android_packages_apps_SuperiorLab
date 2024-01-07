@@ -6,7 +6,30 @@
 <PreferenceScreen
      xmlns:android="http://schemas.android.com/apk/res/android"
      android:title="@string/lockscreen_title"
-     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+     xmlns:app="http://schemas.android.com/apk/res-auto">
+     
+     <Preference
+        android:key="lockscreen_preview"
+        settings:layout="@layout/lockscreen_preview" />
+
+     <PreferenceCategory
+        android:title="Custom Lockscreen Clock">
+
+        <com.superior.support.preferences.SystemSettingListPreference
+            android:entries="@array/clock_style_entries"
+            android:title="Custom Clock style"
+            android:key="clock_style"
+            android:defaultValue="0"
+            android:entryValues="@array/clock_style_values" />
+            
+        <com.superior.support.preferences.SecureSettingSwitchPreference
+            android:key="lockscreen_double_line_clock_switch"
+            android:title="@string/lockscreen_double_line_clock_setting_toggle"
+            android:summary="@string/lockscreen_double_line_clock_summary"
+            android:defaultValue="false" />
+
+     </PreferenceCategory>
      
      <PreferenceCategory
           android:title="@string/general_category">
@@ -42,16 +65,6 @@
                android:title="@string/pocket_judge_title"
                android:summary="@string/pocket_judge_summary"
                android:defaultValue="false" />                      
-     </PreferenceCategory>
-     
-     <PreferenceCategory
-          android:title="@string/lockscreen_clock_title">
-
-          <com.superior.support.preferences.SecureSettingSwitchPreference
-               android:key="lockscreen_double_line_clock_switch"
-               android:title="@string/lockscreen_double_line_clock_setting_toggle"
-               android:summary="@string/lockscreen_double_line_clock_summary"
-               android:defaultValue="false" />
      </PreferenceCategory>
      
      <PreferenceCategory
