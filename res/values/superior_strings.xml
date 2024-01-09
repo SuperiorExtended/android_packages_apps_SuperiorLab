@@ -890,5 +890,7 @@
     <!-- Navbar options -->
    <string name="navigation_bar_arrow_keys_title">Arrow keys</string>
    <string name="navigation_bar_arrow_keys_summary">Show left &amp; right arrows to control the cursor while typing</string>
+   <string name="navbar_compact_layout_title">Compact layout</string>
+    <string name="navbar_compact_layout_summary">Use a compact layout in the navigation bar</string>
 
 </resources>
