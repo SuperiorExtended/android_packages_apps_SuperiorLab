@@ -28,20 +28,22 @@
     <string name="dev3_description">Developer</string>
 
     <!-- Extended Team -->
-    <string name="extended_header">Team SuperiorExtended</string>
+    <string name="extended_header">Team Superior-Extended</string>
     <string name="extended_rdx">Subrata Maity</string>
-    <string name="extended_rdx_description">Founder/LeadDeveloper</string>
+    <string name="extended_rdx_description">Founder/Lead Developer</string>
     <string name="extended_tejas">Tejas Singh</string>
     <string name="extended_tejas_description">Lead Developer</string>
+    <string name="extended_drdisagree">DrDisagree</string>
+    <string name="extended_drdisagree_description">UI/UX Developer</string>
     <string name="extended_atharva">Atharva Swamy</string>
     <string name="extended_atharva_description">Maintainer/Community Relations</string>
     <string name="extended_abhishek">Abhishek Peddada</string>
-    <string name="extended_abhishek_description">Dev/Community Relations</string>
-    <string name="extended_ashutosh">Ashutosh Chettri</string>
-    <string name="extended_ashutosh_description">Designer</string>
+    <string name="extended_abhishek_description">Source Maintainer</string>
+    <string name="extended_dabi">Dabiishere</string>
+    <string name="extended_dabi_description">Designer</string>
 
     <!-- Team Title -->
-    <string name="superior_lab_team">Team SuperiorOS</string>
+    <string name="superior_lab_team">Extended Team</string>
 
     <!-- Categories -->
     <string name="team_title">About Team</string>

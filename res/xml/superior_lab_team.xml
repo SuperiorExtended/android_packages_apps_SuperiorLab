@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2022 SuperiorOS
+<!-- Copyright (C) 2022-2023 The Superior OS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,67 +16,12 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title=" " >
-
-    <!-- Lottie Animation-->
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="team_animation"
-        android:layout="@layout/lab_team"
-        android:selectable="false" />
-
-    <!-- SuperiorLab Header -->
-    <PreferenceCategory
-        android:title="@string/superior_lab_team"
-        android:layout="@layout/superior_preference_category">
-    </PreferenceCategory>
-
-	<PreferenceCategory
-            android:key="superior_dev"
-            android:title="@string/devs_header" >
-	</PreferenceCategory>
-
-        <Preference
-            android:key="dev1"
-            android:title="@string/dev_1"
-            android:icon="@drawable/ic_code"
-            settings:layout="@layout/superior_dashboard_preference_top"
-            android:summary="@string/dev1_description" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Darkstar085" />
-        </Preference>
-
-        <Preference
-            android:key="dev2"
-            android:title="@string/dev_2"
-            android:icon="@drawable/ic_code"
-            settings:layout="@layout/superior_dashboard_preference_middle"
-            android:summary="@string/dev2_description" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/JD1811" />
-        </Preference>
-
-        <Preference
-            android:key="dev3"
-            android:title="@string/dev_3"
-            android:icon="@drawable/ic_code"
-            settings:layout="@layout/superior_dashboard_preference_bottom"
-            android:summary="@string/dev3_description" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Joker_V2_0" />
-        </Preference>
-
-	<PreferenceCategory
-	    android:key="extended_dev"
-	    android:title="@string/extended_header">
-	</PreferenceCategory>
+    android:title="@string/extended_header" >
 
         <Preference
             android:key="extended_rdx"
             android:title="@string/extended_rdx"
-            android:icon="@drawable/ic_devs_mention"
+            android:icon="@drawable/ic_code"
             settings:layout="@layout/superior_dashboard_preference_top"
             android:summary="@string/extended_rdx_description" >
         <intent
@@ -89,10 +34,21 @@
             android:title="@string/extended_tejas"
             android:summary="@string/extended_tejas_description"
             settings:layout="@layout/superior_dashboard_preference_middle"
-            android:icon="@drawable/ic_devs_mention">
+            android:icon="@drawable/ic_code">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/tejas101k" />
+        </Preference>
+        
+        <Preference
+            android:key="extended_drdisagree"
+            android:title="@string/extended_drdisagree"
+            android:summary="@string/extended_drdisagree_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_code">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/DrDisagree" />
         </Preference>
 
         <Preference
@@ -100,7 +56,7 @@
             android:title="@string/extended_atharva"
             android:summary="@string/extended_atharva_description"
             settings:layout="@layout/superior_dashboard_preference_middle"
-            android:icon="@drawable/ic_devs_mention">
+            android:icon="@drawable/ic_code">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/ath1188" />
@@ -111,21 +67,20 @@
             android:title="@string/extended_abhishek"
             android:summary="@string/extended_abhishek_description"
             settings:layout="@layout/superior_dashboard_preference_middle"
-            android:icon="@drawable/ic_devs_mention">
+            android:icon="@drawable/ic_code">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/abhix202" />
         </Preference>
 
         <Preference
-            android:key="extended_ashutosh"
-            android:title="@string/extended_ashutosh"
-            android:summary="@string/extended_ashutosh_description"
+            android:key="extended_dabi"
+            android:title="@string/extended_dabi"
+            android:summary="@string/extended_dabi_description"
             settings:layout="@layout/superior_dashboard_preference_bottom"
-            android:icon="@drawable/ic_devs_mention">
+            android:icon="@drawable/ic_code">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Eidoron1" />
+            android:data="https://t.me/Dabiishere" />
         </Preference>
-
 </PreferenceScreen>
