@@ -31,44 +31,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="superior_dev"
-        android:title="@string/devs_header">
-    </PreferenceCategory>
-
-    <Preference
-        android:key="dev1"
-        android:title="@string/dev_1"
-        android:icon="@drawable/ic_code"
-        settings:layout="@layout/superior_dashboard_preference_top"
-        android:summary="@string/dev1_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Darkstar085" />
-    </Preference>
-
-    <Preference
-        android:key="dev2"
-        android:title="@string/dev_2"
-        android:icon="@drawable/ic_code"
-        settings:layout="@layout/superior_dashboard_preference_middle"
-        android:summary="@string/dev2_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/JD1811" />
-    </Preference>
-
-    <Preference
-        android:key="dev3"
-        android:title="@string/dev_3"
-        android:icon="@drawable/ic_code"
-        settings:layout="@layout/superior_dashboard_preference_bottom"
-        android:summary="@string/dev3_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Joker_V2_0" />
-    </Preference>
-
-    <PreferenceCategory
 	    android:key="extended_dev"
 	    android:title="@string/extended_header">
     </PreferenceCategory>
@@ -76,7 +38,7 @@
         <Preference
             android:key="extended_rdx"
             android:title="@string/extended_rdx"
-            android:icon="@drawable/ic_devs_mention"
+            android:icon="@drawable/ic_code"
             settings:layout="@layout/superior_dashboard_preference_top"
             android:summary="@string/extended_rdx_description" >
         <intent
@@ -89,10 +51,21 @@
             android:title="@string/extended_tejas"
             android:summary="@string/extended_tejas_description"
             settings:layout="@layout/superior_dashboard_preference_middle"
-            android:icon="@drawable/ic_devs_mention">
+            android:icon="@drawable/ic_code">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/tejas101k" />
+        </Preference>
+        
+        <Preference
+            android:key="extended_drdisagree"
+            android:title="@string/extended_drdisagree"
+            android:summary="@string/extended_drdisagree_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_code">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/DrDisagree" />
         </Preference>
 
         <Preference
@@ -100,7 +73,7 @@
             android:title="@string/extended_atharva"
             android:summary="@string/extended_atharva_description"
             settings:layout="@layout/superior_dashboard_preference_middle"
-            android:icon="@drawable/ic_devs_mention">
+            android:icon="@drawable/ic_code">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/ath1188" />
@@ -111,7 +84,7 @@
             android:title="@string/extended_abhishek"
             android:summary="@string/extended_abhishek_description"
             settings:layout="@layout/superior_dashboard_preference_middle"
-            android:icon="@drawable/ic_devs_mention">
+            android:icon="@drawable/ic_code">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/abhix202" />
@@ -122,10 +95,9 @@
             android:title="@string/extended_dabi"
             android:summary="@string/extended_dabi_description"
             settings:layout="@layout/superior_dashboard_preference_bottom"
-            android:icon="@drawable/ic_devs_mention">
+            android:icon="@drawable/ic_code">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/Dabiishere" />
         </Preference>
-
 </PreferenceScreen>
