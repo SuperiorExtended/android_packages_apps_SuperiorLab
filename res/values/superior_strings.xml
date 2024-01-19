@@ -8,17 +8,8 @@
      <!-- App Title -->
      <string name="superior_lab_title">Superior Lab</string>
 
-     <!-- Dev Info -->
-     <string name="devs_header">Team SuperiorOS</string>
-     <string name="dev_1">Sipun Ku Mahanta</string>
-     <string name="dev1_description">Founder/Developer</string>
-     <string name="dev_2">Jayant Deshmukh</string>
-     <string name="dev2_description">Lead Developer</string>
-     <string name="dev_3">Nipin NA</string>
-     <string name="dev3_description">Developer</string>
-
     <!-- Extended Team -->
-    <string name="extended_header">Team SuperiorExtended</string>
+    <string name="extended_header">Team Superior-Extended</string>
     <string name="extended_rdx">Subrata Maity</string>
     <string name="extended_rdx_description">Founder/LeadDeveloper</string>
     <string name="extended_tejas">Tejas Singh</string>
@@ -30,8 +21,50 @@
     <string name="extended_dabi">Dabiishere</string>
     <string name="extended_dabi_description">Designer</string>
 
+
+     <!-- Maintainers -->
+     <string name="maintainers_header">Maintainers (Our Extended Family Members...)</string>
+     <string name="maintainer_rdx">Subrata Maity</string>
+     <string name="maintainer_rdx_description">redwood</string>
+     <string name="maintainer_tejas">Tejas Singh</string>
+     <string name="maintainer_tejas_description">beryllium, ginkgo, munch</string>
+     <string name="maintainer_atharva">Atharva Swamy</string>
+     <string name="maintainer_atharva_description">miatoll, violet</string>
+     <string name="maintainer_abhi">Abhishek Peddada</string>
+     <string name="maintainer_abhi_description">spartan</string>
+     <string name="maintainer_kssrao">Samba Siva Rao K</string>
+     <string name="maintainer_kssrao_description">marble</string>
+     <string name="maintainer_shamik">SHAMIK</string>
+     <string name="maintainer_shamik_description">begonia</string>
+     <string name="maintainer_arijit">Arijit Saha</string>
+     <string name="maintainer_arijit_description">whyred</string>
+     <string name="maintainer_ste005">STE005</string>
+     <string name="maintainer_ste005_description">vayu</string>
+     <string name="maintainer_sipun">Sipun Ku Mahanta</string>
+     <string name="maintainer_sipun_description">Avicci</string>
+     <string name="maintainer_opto">Dr. Opto</string>
+     <string name="maintainer_opto_description">stone</string>
+     <string name="maintainer_ashray">Ashray Singh</string>
+     <string name="maintainer_ashray_description">haydn</string>
+     <string name="maintainer_akshat">Akshat Singh</string>
+     <string name="maintainer_akshat_description">fajita</string>
+     <string name="maintainer_offender">Offender</string>
+     <string name="maintainer_offender_description">alioth</string>
+     <string name="maintainer_zizzyboi">Zizzyboi</string>
+     <string name="maintainer_zizzyboi_description">instantnoodle(p), kebab, spacewar</string>
+     <string name="maintainer_prateek">Prateek Bhatia</string>
+     <string name="maintainer_prateek_description">veux</string>
+     <string name="maintainer_pawelik">Pawelik</string>
+     <string name="maintainer_pawelik_description">raphael, sakura, daisy, chime</string>
+     <string name="maintainer_aarav">Aarav</string>
+     <string name="maintainer_aarav_description">sweet</string>
+     <string name="maintainer_ramshell">Ramshell688</string>
+     <string name="maintainer_ramshell_description">camellia</string>
+     <string name="maintainer_jasayan">Jassi and Sayan</string>
+     <string name="maintainer_jasayan_description">spes</string>
+
      <!-- Team Title -->
-     <string name="superior_lab_team">Team Superior</string>
+     <string name="superior_lab_team">Superior FAM</string>
 
      <!-- Categories -->
      <string name="team_title">About Team</string>

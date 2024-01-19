@@ -31,44 +31,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="superior_dev"
-        android:title="@string/devs_header">
-    </PreferenceCategory>
-
-    <Preference
-        android:key="dev1"
-        android:title="@string/dev_1"
-        android:icon="@drawable/ic_code"
-        settings:layout="@layout/superior_dashboard_preference_top"
-        android:summary="@string/dev1_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Darkstar085" />
-    </Preference>
-
-    <Preference
-        android:key="dev2"
-        android:title="@string/dev_2"
-        android:icon="@drawable/ic_code"
-        settings:layout="@layout/superior_dashboard_preference_middle"
-        android:summary="@string/dev2_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/JD1811" />
-    </Preference>
-
-    <Preference
-        android:key="dev3"
-        android:title="@string/dev_3"
-        android:icon="@drawable/ic_code"
-        settings:layout="@layout/superior_dashboard_preference_bottom"
-        android:summary="@string/dev3_description">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/Joker_V2_0" />
-    </Preference>
-
-    <PreferenceCategory
 	    android:key="extended_dev"
 	    android:title="@string/extended_header">
     </PreferenceCategory>
@@ -76,7 +38,7 @@
         <Preference
             android:key="extended_rdx"
             android:title="@string/extended_rdx"
-            android:icon="@drawable/ic_devs_mention"
+            android:icon="@drawable/ic_code"
             settings:layout="@layout/superior_dashboard_preference_top"
             android:summary="@string/extended_rdx_description" >
         <intent
@@ -89,7 +51,7 @@
             android:title="@string/extended_tejas"
             android:summary="@string/extended_tejas_description"
             settings:layout="@layout/superior_dashboard_preference_middle"
-            android:icon="@drawable/ic_devs_mention">
+            android:icon="@drawable/ic_code">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/tejas101k" />
@@ -100,7 +62,7 @@
             android:title="@string/extended_atharva"
             android:summary="@string/extended_atharva_description"
             settings:layout="@layout/superior_dashboard_preference_middle"
-            android:icon="@drawable/ic_devs_mention">
+            android:icon="@drawable/ic_code">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/ath1188" />
@@ -111,7 +73,7 @@
             android:title="@string/extended_abhishek"
             android:summary="@string/extended_abhishek_description"
             settings:layout="@layout/superior_dashboard_preference_middle"
-            android:icon="@drawable/ic_devs_mention">
+            android:icon="@drawable/ic_code">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/abhix202" />
@@ -122,10 +84,224 @@
             android:title="@string/extended_dabi"
             android:summary="@string/extended_dabi_description"
             settings:layout="@layout/superior_dashboard_preference_bottom"
-            android:icon="@drawable/ic_devs_mention">
+            android:icon="@drawable/ic_code">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/Dabiishere" />
+        </Preference>
+
+    <PreferenceCategory
+	    android:key="maintainer_dev"
+	    android:title="@string/maintainers_header">
+    </PreferenceCategory>
+
+        <Preference
+            android:key="maintainer_rdx"
+            android:title="@string/maintainer_rdx"
+            android:icon="@drawable/ic_devs_mention"
+            settings:layout="@layout/superior_dashboard_preference_top"
+            android:summary="@string/maintainer_rdx_description" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Rdx55" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_tejas"
+            android:title="@string/maintainer_tejas"
+            android:summary="@string/maintainer_tejas_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/tejas101k" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_sipun"
+            android:title="@string/maintainer_sipun"
+            android:summary="@string/maintainer_sipun_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/darkstar085" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_atharva"
+            android:title="@string/maintainer_atharva"
+            android:summary="@string/maintainer_atharva_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/ath1188" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_abhi"
+            android:title="@string/maintainer_abhi"
+            android:summary="@string/maintainer_abhi_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/abhix202" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_kssrao"
+            android:title="@string/maintainer_kssrao"
+            android:summary="@string/maintainer_kssrao_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/kssrao13882" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_ashray"
+            android:title="@string/maintainer_ashray"
+            android:summary="@string/maintainer_ashray_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/AshraySingh" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_jasayan"
+            android:title="@string/maintainer_jasayan"
+            android:summary="@string/maintainer_jasayan_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/JassiV07" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_arijit"
+            android:title="@string/maintainer_arijit"
+            android:summary="@string/maintainer_arijit_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Whyred_404" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_pawelik"
+            android:title="@string/maintainer_pawelik"
+            android:summary="@string/maintainer_pawelik_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/pawelik001" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_zizzyboi"
+            android:title="@string/maintainer_zizzyboi"
+            android:summary="@string/maintainer_zizzyboi_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/twinchin96" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_offender"
+            android:title="@string/maintainer_offender"
+            android:summary="@string/maintainer_offender_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/lazyafk" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_prateek"
+            android:title="@string/maintainer_prateek"
+            android:summary="@string/maintainer_prateek_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/FreakyPrateek" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_akshat"
+            android:title="@string/maintainer_akshat"
+            android:icon="@drawable/ic_devs_mention"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:summary="@string/maintainer_akshat_description" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Legendleo90" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_aarav"
+            android:title="@string/maintainer_aarav"
+            android:summary="@string/maintainer_aarav_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/aarav_x" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_opto"
+            android:title="@string/maintainer_opto"
+            android:summary="@string/maintainer_opto_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Dr_Opto" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_ramshell"
+            android:title="@string/maintainer_ramshell"
+            android:summary="@string/maintainer_ramshell_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/ramshell688" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_shamik"
+            android:title="@string/maintainer_shamik"
+            android:summary="@string/maintainer_shamik_description"
+            settings:layout="@layout/superior_dashboard_preference_middle"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/shhhamik" />
+        </Preference>
+
+        <Preference
+            android:key="maintainer_ste005"
+            android:title="@string/maintainer_ste005"
+            android:summary="@string/maintainer_ste005_description"
+            settings:layout="@layout/superior_dashboard_preference_bottom"
+            android:icon="@drawable/ic_devs_mention">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Ste0090" />
         </Preference>
 
 </PreferenceScreen>
