@@ -46,13 +46,19 @@
                android:dialogTitle="@string/screen_off_animation_title"
                android:entries="@array/screen_off_animation_entries"
                android:entryValues="@array/screen_off_animation_values"
-               android:defaultValue="0" />                        
+               android:defaultValue="0" />  
+               
+          <com.superior.support.preferences.SystemSettingSwitchPreference
+               android:key="lockscreen_hide_status_bar"
+               android:title="@string/lockscreen_hide_status_bar_title"
+               android:summary="@string/lockscreen_hide_status_bar_summary"
+               android:defaultValue="false" />                      
                
           <com.superior.support.preferences.GlobalSettingSwitchPreference
                android:key="wake_when_plugged_or_unplugged"
                android:title="@string/wakeup_when_plugged_unplugged_title"
                android:summary="@string/wakeup_when_plugged_unplugged_summary"
-               android:defaultValue="true" /> 
+               android:defaultValue="true" />                           
                
           <com.superior.support.preferences.SecureSettingSwitchPreference
                android:key="doze_on_charge"
