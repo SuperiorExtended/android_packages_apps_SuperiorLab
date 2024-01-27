@@ -202,7 +202,7 @@
             android:icon="@drawable/ic_devs_mention">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://t.me/pawelik001" />
+            android:data="https://t.me/pawelikhideout" />
         </Preference>
 
         <Preference
