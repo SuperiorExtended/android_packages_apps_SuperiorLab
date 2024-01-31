@@ -61,6 +61,12 @@
         android:summary="@string/theme_customization_wifi_icon_summary"
         android:fragment="com.superior.lab.fragments.WifiIcons"/>
         
+    <Preference
+        android:key="udfps_recognizing_animation_preview"
+        android:title="@string/udfps_recog_animation_effect_title"
+        android:summary="@string/udfps_recog_animation_effect_summary"
+        android:fragment="com.superior.lab.fragments.lockscreen.UdfpsAnimation" />
+        
     <!-- Volume Styles -->      
     <com.superior.support.preferences.SystemSettingListPreference
         android:key="custom_volume_styles"
