@@ -56,6 +56,7 @@ import android.view.View;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.util.superior.SuperiorUtils;
 import com.android.settings.Utils;
 
 import com.superior.support.colorpicker.ColorPickerPreference;
@@ -67,8 +68,10 @@ import java.util.List;
 public class ThemesSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String TAG = "ThemesSettings";
+    private static final String KEY_UDFPS_ANIMATIONS = "udfps_recognizing_animation_preview";
 
     private Context mContext;
+    private Preference mUdfpsAnimations;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -77,6 +80,10 @@ public class ThemesSettings extends SettingsPreferenceFragment implements OnPref
         addPreferencesFromResource(R.xml.superior_lab_themes);
 
         mContext = getActivity();
+        mUdfpsAnimations = (Preference) findPreference(KEY_UDFPS_ANIMATIONS);
+        if (!SuperiorUtils.isPackageInstalled(getContext(), "com.superior.udfps.resources")) {
+                getPreferenceScreen().removePreference(mUdfpsAnimations);
+        }       
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen screen = getPreferenceScreen();
