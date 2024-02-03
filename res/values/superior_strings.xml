@@ -62,6 +62,8 @@
      <string name="maintainer_ramshell_description">camellia</string>
      <string name="maintainer_jasayan">Jassi and Sayan</string>
      <string name="maintainer_jasayan_description">spes</string>
+     <string name="maintainer_sonu">Sonu Singh</string>
+     <string name="maintainer_sonu_description">mido</string>
 
      <!-- Team Title -->
      <string name="superior_lab_team">Superior FAM</string>
