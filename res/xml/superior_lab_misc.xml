@@ -39,6 +39,12 @@
             android:summary="@string/smart_pixels_summary" 
             android:fragment="com.superior.lab.fragments.SmartPixels" />
             
+        <com.superior.support.preferences.GlobalSettingSwitchPreference
+            android:key="pm_downgrade_allowed"
+            android:title="@string/app_downgrade_title"
+            android:summary="@string/app_downgrade_summary"
+            android:defaultValue="false"/>
+            
         <com.superior.support.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.games"
             android:title="@string/games_spoof_title"
