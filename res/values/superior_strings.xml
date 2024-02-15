@@ -854,7 +854,7 @@
     
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Pocket detection</string>
-    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
+    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket (Enabling this can break/effect deep sleep)</string>
     
     <!-- Statusbar lyric -->
     <string name="status_bar_lyric_title">Status bar lyric</string>
