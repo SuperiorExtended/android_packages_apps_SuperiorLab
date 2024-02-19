@@ -30,6 +30,12 @@
                android:summary="@string/qs_dual_tone_summary"
                android:defaultValue="true" />
                
+          <com.superior.support.preferences.SystemSettingSwitchPreference
+               android:key="qs_colored_icons"
+               android:title="@string/qs_colored_icons_title"
+               android:summary="@string/qs_colored_icons_summary"
+               android:defaultValue="true" />
+               
           <com.superior.support.preferences.SystemSettingSeekBarPreference
                android:key="qs_header_clock_size"
                android:title="@string/clock_font_size_title"

@@ -1035,4 +1035,8 @@
     <!-- Volume Media Output Toggle -->
     <string name="volume_media_output_toggle_title">Volume media output</string>
     <string name="volume_media_output_toggle_summary">Show media output toggle when there is an active stream</string>
+    
+    <!-- Colored QS notification icons -->  
+    <string name="qs_colored_icons_title">Colored QS notification icons</string>
+    <string name="qs_colored_icons_summary">Show colored app icon instead of monochrome icons</string>
 </resources>
