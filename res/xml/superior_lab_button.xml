@@ -36,6 +36,12 @@
         android:dependency="VOLUME_TEXTVIEW"                                                     
         android:entryValues="@array/volume_persen_style_values"
         android:defaultValue="0" />
+        
+     <com.superior.support.preferences.SystemSettingSwitchPreference
+        android:key="volume_media_output_toggle"
+        android:title="@string/volume_media_output_toggle_title"
+        android:summary="@string/volume_media_output_toggle_summary"
+        android:defaultValue="true" />
 
      <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="volume_rocker_wake"

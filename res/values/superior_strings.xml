@@ -1031,4 +1031,8 @@
     <!-- Custom switch -->
     <string name="theme_customization_switch_title">Switch Style</string>
     <string name="theme_customization_switch_summary">Set custom switch style</string>
+    
+    <!-- Volume Media Output Toggle -->
+    <string name="volume_media_output_toggle_title">Volume media output</string>
+    <string name="volume_media_output_toggle_summary">Show media output toggle when there is an active stream</string>
 </resources>
