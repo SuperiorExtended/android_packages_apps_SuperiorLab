@@ -23,13 +23,21 @@
         android:title="@string/superior_lab_title"
         android:layout="@layout/superior_preference_category">
     </PreferenceCategory>
-    
+
+        <!-- Team -->
+        <Preference
+            android:key="team__category"
+            android:title="@string/team_title" 
+            android:fragment="com.superior.lab.fragments.SuperiorTeam"
+            android:icon="@drawable/ic_settings_team"
+            settings:layout="@layout/superior_dashboard_preference_single"/>
+
         <!-- Themes -->
         <Preference
             android:key="themes"
             android:fragment="com.superior.lab.fragments.ThemesSettings"
             android:icon="@drawable/ic_settings_themes"
-            settings:layout="@layout/superior_dashboard_preference_single"
+            settings:layout="@layout/superior_dashboard_preference_top"
             android:title="@string/themes_title" />
 
         <!-- Status Bar -->
@@ -37,7 +45,7 @@
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
             android:fragment="com.superior.lab.fragments.StatusBarSettings" 
-            settings:layout="@layout/superior_dashboard_preference_top"
+            settings:layout="@layout/superior_dashboard_preference_middle"
             android:icon="@drawable/ic_settings_statusbar"/>
 
         <!-- Quick Settings panel -->
@@ -93,7 +101,7 @@
             android:key="notifications_category"
             android:title="@string/notifications_title"
             android:fragment="com.superior.lab.fragments.NotificationSettings"
-            settings:layout="@layout/superior_dashboard_preference_bottom"
+            settings:layout="@layout/superior_dashboard_preference_middle"
             android:icon="@drawable/ic_settings_notifications"/>
 
         <!-- Misc -->
@@ -101,14 +109,7 @@
             android:key="misc_category"
             android:title="@string/misc_title" 
             android:fragment="com.superior.lab.fragments.MiscSettings"
-            settings:layout="@layout/superior_dashboard_preference_top"
+            settings:layout="@layout/superior_dashboard_preference_bottom"
             android:icon="@drawable/ic_settings_miscs"/>
-            
-       <Preference
-            android:key="team__category"
-            android:title="@string/team_title" 
-            android:fragment="com.superior.lab.fragments.SuperiorTeam"
-            android:icon="@drawable/ic_settings_team"
-            settings:layout="@layout/superior_dashboard_preference_bottom"/>
 
 </PreferenceScreen>
