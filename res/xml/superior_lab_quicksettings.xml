@@ -13,12 +13,14 @@
 
           <com.superior.support.preferences.SystemSettingSwitchPreference
                android:key="qs_footer_data_usage"
+               android:icon="@drawable/ic_swap_vertical"
                android:title="@string/qs_show_data_usage_title"
                android:summary="@string/qs_show_data_usage_summary"
                android:defaultValue="true" />
 
           <ListPreference
                android:key="qs_quick_pulldown"
+               android:icon="@drawable/ic_arrow_down"
                android:title="@string/qs_quick_pulldown"
                android:entries="@array/quick_pulldown_entries"
                android:entryValues="@array/quick_pulldown_values"
@@ -26,12 +28,14 @@
                
           <com.superior.support.preferences.SystemSettingSwitchPreference
                android:key="qs_dual_tone"
+               android:icon="@drawable/ic_color_bucket"
                android:title="@string/qs_dual_tone_title"
                android:summary="@string/qs_dual_tone_summary"
                android:defaultValue="true" />
                
           <com.superior.support.preferences.SystemSettingSeekBarPreference
                android:key="qs_header_clock_size"
+               android:icon="@drawable/ic_font"
                android:title="@string/clock_font_size_title"
                android:max="27"
                settings:min="10"
@@ -41,6 +45,7 @@
                
           <com.superior.support.preferences.SystemSettingSeekBarPreference
                android:key="qs_transparency"
+               android:icon="@drawable/ic_color_bucket"
                android:title="@string/qs_transparency_title"
                android:summary="@string/qs_transparency_summary"
                android:defaultValue="100"
@@ -51,6 +56,7 @@
                
           <com.superior.support.preferences.SystemSettingListPreference
                android:key="custom_transitions_page_tile"
+               android:icon="@drawable/ic_qs_tile_animation_style"
                android:entries="@array/qs_transitions_entries"
                android:entryValues="@array/qs_transitions_values"
                android:summary="%s"
@@ -58,6 +64,7 @@
                
           <com.superior.support.preferences.SystemSettingListPreference
                android:key="qs_panel_style"
+               android:icon="@drawable/ic_color_bucket"
                android:title="@string/qs_styles_title"
                android:entries="@array/qs_styles_entries"
                android:entryValues="@array/qs_styles_values"
@@ -66,12 +73,14 @@
                
           <Preference
                android:key="qs_header_image"
+               android:icon="@drawable/ic_header"
                android:fragment="com.superior.lab.fragments.QsHeaderImageSettings"
                android:title="@string/qs_header_image_title"
                android:summary="@string/qs_header_image_summary" />
                
           <com.superior.support.preferences.SystemSettingSeekBarPreference
                android:key="qs_header_size"
+               android:icon="@drawable/ic_font"
                android:title="@string/large_qs_switch_title"
                android:max="400"
                settings:min="110"
@@ -85,6 +94,7 @@
           <!-- Brightness slider -->
           <com.superior.support.preferences.SecureSettingListPreference
                android:key="qs_show_brightness_slider"
+               android:icon="@drawable/ic_brightness"
                android:title="@string/qs_show_brightness_slider_title"
                android:entries="@array/qs_show_brightness_slider_entries"
                android:entryValues="@array/qs_show_brightness_slider_values"
@@ -92,6 +102,7 @@
 
           <com.superior.support.preferences.SecureSettingListPreference
                android:key="qs_brightness_slider_position"
+               android:icon="@drawable/ic_brightness"
                android:dependency="qs_show_brightness_slider"
                android:title="@string/qs_brightness_slider_position_title"
                android:entries="@array/qs_brightness_slider_position_entries"
@@ -100,6 +111,7 @@
 
           <com.superior.support.preferences.SecureSettingSwitchPreference
                android:key="qs_show_auto_brightness"
+               android:icon="@drawable/ic_brightness_auto"
                android:dependency="qs_show_brightness_slider"
                android:title="@string/qs_show_auto_brightness_title"
                android:summary="@string/qs_show_auto_brightness_summary"
@@ -107,12 +119,14 @@
                
           <com.superior.support.preferences.SystemSettingSwitchPreference
                android:key="qs_brightness_slider_haptic"
+               android:icon="@drawable/ic_brightness"
                android:title="@string/qs_brightness_slider_haptic_title"
                android:summary="@string/qs_brightness_slider_haptic_summary"
                android:defaultValue="false" />
                
           <com.superior.support.preferences.SystemSettingSwitchPreference
                android:title="Brightness Percentage"
+               android:icon="@drawable/ic_brightness_percentage"
                android:key="BRIGHTNESS_TEXTVIEW"
                android:summary="show hide brightness percentage text"
                android:defaultValue="false" />
@@ -123,12 +137,14 @@
           
           <Preference
         	android:key="qs_tile_layout"
+            android:icon="@drawable/ic_settings_quicksetting"
         	android:title="@string/qs_tile_layout_title"
         	android:summary="@string/qs_tile_layout_summary"
         	android:fragment="com.superior.lab.fragments.QsTileLayoutSettings" />
           
           <com.superior.support.preferences.SecureSettingSwitchPreference
             android:key="quick_settings_vibrate"
+            android:icon="@drawable/ic_vibrate"
             android:title="@string/quick_settings_vibrate_title"
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
@@ -140,6 +156,7 @@
 
         <com.superior.support.preferences.SystemSettingListPreference
             android:key="qs_tile_animation_style"
+            android:icon="@drawable/ic_qs_tile_animation_style"
             android:title="@string/qs_tile_animation_style_title"
             android:entries="@array/qs_tile_animation_style_entries"
             android:entryValues="@array/qs_tile_animation_style_values"
@@ -147,6 +164,7 @@
 
         <com.superior.support.preferences.SystemSettingSeekBarPreference
             android:key="qs_tile_animation_duration"
+            android:icon="@drawable/ic_clock"
             android:title="@string/qs_tile_animation_duration_title"
             android:defaultValue="1"
             settings:interval="1"
@@ -156,6 +174,7 @@
 
         <com.superior.support.preferences.SystemSettingListPreference
             android:key="qs_tile_animation_interpolator"
+            android:icon="@drawable/ic_qs_tile_animation_interpolator"
             android:title="@string/qs_tile_animation_interpolator_title"
             android:entries="@array/qs_tile_animation_interpolator_entries"
             android:entryValues="@array/qs_tile_animation_interpolator_values"

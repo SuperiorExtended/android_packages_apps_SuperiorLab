@@ -25,6 +25,7 @@
 
     <Preference
         android:key="gesture_system_navigation"
+        android:icon="@drawable/ic_buttons"
         android:title="@string/system_navigation_title"
         android:summary="@string/system_navigation_summary"
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
@@ -38,6 +39,7 @@
         
     <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="pixel_nav_animation"
+        android:icon="@drawable/ic_google_circles"
         android:title="@string/pixel_navbar_anim_title"
         android:summary="@string/pixel_navbar_anim_summary"
         android:defaultValue="true" />
