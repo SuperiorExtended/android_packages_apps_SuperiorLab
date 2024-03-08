@@ -16,19 +16,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title=" " >
-
-    <!-- Lottie Animation-->
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="lab_animation"
-        android:layout="@layout/lab_lottie"
-        android:selectable="false" />
-
-    <!-- SuperiorLab Header -->
-    <PreferenceCategory
-        android:title="@string/superior_lab_title"
-        android:layout="@layout/superior_preference_category">
-    </PreferenceCategory>
+    android:title="@string/superior_lab_title" >
 
         <!-- Team -->
         <Preference
