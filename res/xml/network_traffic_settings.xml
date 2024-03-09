@@ -31,6 +31,13 @@
         android:summary="@string/network_traffic_autohide_summary"
         android:defaultValue="false"
         android:dependency="network_traffic_enabled" />
+        
+    <com.superior.support.preferences.SystemSettingSwitchPreference
+        android:key="network_traffic_drawable"
+        android:title="@string/network_traffic_drawable_title"
+        android:summary="@string/network_traffic_drawable_summary"
+        android:defaultValue="false"
+        android:dependency="network_traffic_enabled" />
 
     <DropDownPreference
         android:key="network_traffic_unit_type"

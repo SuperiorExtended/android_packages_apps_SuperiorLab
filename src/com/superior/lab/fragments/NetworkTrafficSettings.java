@@ -35,6 +35,7 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
     private static final String TAG = "NetworkTrafficSettings";
 
     private SwitchPreference mNetTrafficAutohide;
+    private SwitchPreference mNetTrafficDrawable;
     private DropDownPreference mNetTrafficUnitType;
 
     @Override
@@ -51,6 +52,9 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         int units = Settings.System.getInt(resolver,
                 Settings.System.NETWORK_TRAFFIC_UNIT_TYPE, /* Bytes */ 0);
         mNetTrafficUnitType.setValue(String.valueOf(units));
+        
+        mNetTrafficDrawable = findPreference(Settings.System.NETWORK_TRAFFIC_DRAWABLE);
+        mNetTrafficDrawable.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -59,7 +63,11 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
             int unitType = Integer.valueOf((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.NETWORK_TRAFFIC_UNIT_TYPE, unitType);
-        }
+        } else if (preference == mNetTrafficDrawable) {
+            boolean enabled = (boolean) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NETWORK_TRAFFIC_DRAWABLE, enabled ? 1 : 0);
+        }                  
         return true;
     }
 
